@@ -1,0 +1,34 @@
+plugins: {}
+
+filters:
+  comments: true
+  allowlist:
+    allow:
+      # Math
+      - "/\\$\\$[\\s\\S]*?\\$\\$/m"
+      - "/\\$([^$]*)\\$/"
+
+      # Pandoc markdown
+      - "/\\{([^}]*)\\}/"
+
+      # Ignore following line with this comment
+      - "/<!-- textlint-ignore -->\\n.*/"
+
+rules:
+  preset-ja-technical-writing:
+    ja-no-mixed-period:
+      periodMark: "。"
+    max-kanji-continuous-len: false
+    sentence-length: 100
+    no-mix-dearu-desumasu:
+      preferInHeader: "である"
+      preferInBody: "である"
+      preferInList: "である"
+      strict: true
+  preset-jtf-style:
+    "1.2.1.句点(。)と読点(、)": false
+    "1.2.2.ピリオド(.)とカンマ(,)": true
+    "3.1.1.全角文字と半角文字の間": false
+    "3.1.2.全角文字どうし": false
+    "4.3.1.丸かっこ（）": false
+    "4.3.1.大かっこ［］": false

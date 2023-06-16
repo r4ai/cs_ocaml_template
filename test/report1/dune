@@ -1,0 +1,10 @@
+(executable
+ (name test_report1)
+ (public_name test_report1)
+ (libraries alcotest report1))
+
+(rule
+ (alias runtest)
+ (package cs_ocaml)
+ (action
+  (run %{dep:test_report1.exe})))

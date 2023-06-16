@@ -1,0 +1,4 @@
+(executables
+ (names main)
+ (public_names report1_kadai1)
+ (libraries report1))
