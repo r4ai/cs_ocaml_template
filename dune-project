@@ -12,6 +12,5 @@
  (depends
   (ocaml
    (>= 4.07.0))
-  (ounit2 :with-test)
   (alcotest :with-test)
   dune))

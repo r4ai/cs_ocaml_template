@@ -4,7 +4,6 @@ synopsis: "Computer Science"
 description: "Comuter Science with Ocaml"
 depends: [
   "ocaml" {>= "4.07.0"}
-  "ounit2" {with-test}
   "alcotest" {with-test}
   "dune" {>= "3.4"}
   "odoc" {with-doc}
