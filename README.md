@@ -86,6 +86,12 @@ bin/report3/dune
 
 ## Commands
 
+### Install dependencies
+
+```bash
+opam install . --deps-only --with-test
+```
+
 ### Build
 
 - ビルド結果は、`_build/default/`に保存されてる。
